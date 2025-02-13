@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Bite Local</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Simple line icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <!-- Inline custom styles -->
+  <style>
+    /* Ensure the entire page has a uniform cream background */
+    body {
+      background-color: #FFF3E0 !important;
+      color: #333;
+      font-family: "Source Sans Pro", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Top Navbar Styles */
+    .navbar-custom {
+      background-color: #FFF3E0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #000 !important;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #f5a623 !important;
+    }
+    /* Override any masthead background images */
+    .masthead {
+      background-color: #FFF3E0 !important;
+      background-image: none !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      padding: 4rem 0;
+      text-align: center;
+      color: #000;
+    }
+    .masthead h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .masthead h3 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    /* Simple custom button style */
+    .btn-custom {
+      background-color: #f5a623;
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 5px;
+    }
+    .btn-custom:hover {
+      background-color: #ffa94d;
+      color: #fff;
+    }
+    /* Remove background images from content sections and unify color */
+    .content-section, .callout, .footer {
+      background-color: #FFF3E0 !important;
+      background-image: none !important;
+      color: #333;
+    }
+    /* Features Section: Override text-faded to be black */
+    #features .text-faded {
+      color: #000 !important;
+    }
+    /* Fade-in animation classes for sections */
+    .animate-section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+    .animate-section.animate-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Feature card animation */
+    .feature-card {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .feature-card.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Additional hover animation for feature cards */
+    .feature-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body id="page-top">
+
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">Bite Local</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">What We Offer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- (Optional) Remove or hide the existing sidebar nav if not needed -->
+  <!--
+  <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a href="#page-top">Bite Local</a>
+      </li>
+      <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+      <li class="sidebar-nav-item"><a href="#about">About</a></li>
+      <li class="sidebar-nav-item"><a href="#features">What We Offer</a></li>
+      <li class="sidebar-nav-item"><a href="#testimonials">Testimonials</a></li>
+      <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  -->
+
+  <!-- Header (Masthead) -->
+  <header class="masthead d-flex align-items-center animate-section" style="margin-top: 70px;">
+    <div class="container px-4 px-lg-5 text-center">
+      <h1 class="mb-1">Empower Your Catering</h1>
+      <h3 class="mb-5">Take control of your business with 0 fees and a free consultation</h3>
+      <a class="btn btn-custom" href="#about">Get Started</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light animate-section" id="about">
+    <div class="container px-4 px-lg-5 text-center">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-10">
+          <h2>We help you grow your catering business.</h2>
+          <p class="lead mb-5">
+            Enjoy full control of your menu, orders, and customer experience. We’re here to ensure you never pay a commission fee.
+          </p>
+          <a class="btn btn-dark btn-xl" href="#features">Explore Features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features ("What We Offer") -->
+  <section class="content-section" id="features" style="color: #000;">
+    <div class="container px-4 px-lg-5 text-center">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Features</h3>
+        <h2 class="mb-5">What We Offer</h2>
+      </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <!-- 1: Customized Catering -->
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0 feature-card">
+          <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+          <h4><strong>Customized Catering</strong></h4>
+          <p class="text-faded mb-0">Tailored solutions for your unique needs.</p>
+        </div>
+        <!-- 2: No Hidden Fees -->
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0 feature-card">
+          <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+          <h4><strong>No Hidden Fees</strong></h4>
+          <p class="text-faded mb-0">Transparent pricing, always.</p>
+        </div>
+        <!-- 3: Personalized Consultation -->
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-0 feature-card">
+          <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+          <h4><strong>Personalized Consultation</strong></h4>
+          <p class="text-faded mb-0">Expert guidance to help you succeed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Callout -->
+  <section class="callout animate-section">
+    <div class="container px-4 px-lg-5 text-center">
+      <h2 class="mx-auto mb-5">
+        Ready to boost your sales?
+      </h2>
+      <a class="btn btn-custom btn-xl" href="#testimonials">See What Others Say</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="content-section animate-section" id="testimonials">
+    <div class="container px-4 px-lg-5">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Testimonials</h3>
+        <h2 class="mb-5">What Our Clients Say</h2>
+      </div>
+      <div class="row gx-0">
+        <div class="col-lg-6">
+          <div class="portfolio-item">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">John’s Catering</div>
+                <p class="mb-0">“Using Bite Local has doubled our orders without any fees!”</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="John’s Catering" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="portfolio-item">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Amy’s Cakes</div>
+                <p class="mb-0">“So easy to set up and manage. My customers love it!”</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="Amy’s Cakes" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="portfolio-item">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Mark’s BBQ</div>
+                <p class="mb-0">“No commissions, better margins—what’s not to like?”</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="Mark’s BBQ" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="portfolio-item">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Lisa’s Desserts</div>
+                <p class="mb-0">“I recommend this to every catering business I know.”</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="Lisa’s Desserts" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="content-section bg-primary text-white animate-section">
+    <div class="container px-4 px-lg-5 text-center">
+      <h2 class="mb-4">Get Started with Bite Local</h2>
+      <a class="btn btn-xl btn-light me-4" href="#contact">Contact Us</a>
+      <a class="btn btn-xl btn-dark" href="#!">Sign Up Free</a>
+    </div>
+  </section>
+
+  <!-- Map (Brandeis University) -->
+  <div class="map animate-section" id="contact">
+    <iframe
+      width="100%"
+      height="450"
+      style="border:0"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.847199568084!2d-71.26437328454206!3d42.365483879186224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e385129c29728b%3A0x6f4c85b7d1f2dd3f!2sBrandeis%20University!5e0!3m2!1sen!2sus!4v1625165131766!5m2!1sen!2sus">
+    </iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center animate-section">
+    <div class="container px-4 px-lg-5">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+        </li>
+      </ul>
+      <p class="text-white small mb-0">&copy; Bite Local 2025</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+
+  <!-- Simple IntersectionObserver for fade-in animations -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const sections = document.querySelectorAll('.animate-section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-active');
+          }
+        });
+      }, { threshold: 0.2 });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+    
+    // Feature cards animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const featureCards = document.querySelectorAll('.feature-card');
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      featureCards.forEach(card => observer.observe(card));
+    });
+  </script>
+</body>
+</html>
